@@ -9,7 +9,7 @@ export default function NavBar() {
             <div className="font-helvitica -mb-1  font-extrabold text-xl text-[#FF2B06]">
               TED<sup>x</sup>
             </div>
-            <div className="font-thin -mt-1 text-[0.8rem] text-white">
+            <div className="font-light -mt-1 text-[0.8rem] text-white">
               NIT Andhra Pradesh
             </div>
             <div className="-mt-[0.7rem]">
@@ -21,7 +21,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="h-full  sm:w-[60%]">
-          <ul className=" text-white h-full hidden sm:flex justify-around items-center text-[0.8rem] font-extralight">
+          <ul className=" text-white h-full hidden sm:flex justify-around items-center text-[0.8rem] font-light">
             <li className="nav-link">
               <Link href="/">HOME</Link>
             </li>

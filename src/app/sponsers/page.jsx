@@ -1,5 +1,11 @@
 import React from "react";
 
 export default function page() {
-  return <div>page</div>;
+  return (
+    <div
+      className="
+  bg-black h-[100vh]
+    "
+    ></div>
+  );
 }
