@@ -4,12 +4,24 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+// if (typeof window !== "undefined") {
+//   gsap.registerPlugin(ScrollTrigger, useGSAP);
+// }
+//
+gsap.registerPlugin(ScrollTrigger);
 export default function NavBar() {
   const nav = useRef();
-
+  useGSAP(() => {
+    gsap.to(nav.current, {
+      scrollTrigger: {
+        trigger: ".title",
+        start: "top center",
+        // markers: true,
+        scrub: true,
+      },
+      backgroundColor: "#000",
+    });
+  });
   return (
     <>
       <div

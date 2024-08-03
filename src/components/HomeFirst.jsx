@@ -6,7 +6,7 @@ export default function HomeFirst() {
       <div className="flex bg-no-repeat relative top-0 bg-[url('../images/Home.png')] h-[100vh] justify-center w-full bg-cover">
         <div className="p-5 pl-[3rem] gap-6 flex justify-end flex-col items-start bg-gradient-to-tr from-black/10 via-black/60 to-tedred/10 backdrop-filter backdrop-blur-sm bg-opacity-45 h-full w-full ">
           {/* <div> */}
-          <div className=" text-[#FF2B06] text-2xl md:text-3xl">
+          <div className="title text-[#FF2B06] text-2xl md:text-3xl">
             <span className="font-helvitica font-extrabold">
               TED<sup>x</sup>
             </span>
