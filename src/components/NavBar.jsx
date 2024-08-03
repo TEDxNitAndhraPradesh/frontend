@@ -1,10 +1,24 @@
+"use client";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import Link from "next/link";
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
 export default function NavBar() {
+  const nav = useRef();
+
   return (
     <>
-      <div className="z-10 sticky top-0 bg-black/95 bg-opacity-80 backdrop-blur flex justify-between p-2 items-center h-[5rem] w-full ">
-        <div className="w-[15rem] flex gap-2 justify-start ">
-          <div className="w-[5rem] bg-green-100"></div>
+      <div
+        ref={nav}
+        className="z-10 fixed top-0 flex justify-between p-2 items-center h-[5rem] w-full "
+      >
+        {/* <div className="z-10 sticky top-0 bg-black/95 bg-opacity-80 backdrop-blur flex justify-between p-2 items-center h-[5rem] w-full "> */}
+        <div className="w-[15rem] sm:pl-[3rem] flex gap-2 justify-start ">
+          {/* <div className="w-[5rem] bg-green-100"></div> */}
           <div className="flex-col justify-center">
             <div className="font-helvitica -mb-1  font-extrabold text-xl text-[#FF2B06]">
               TED<sup>x</sup>

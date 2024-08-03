@@ -9,10 +9,15 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
         helvitica: ["helvitica", "sans-serif"],
       },
       colors: {
         tedred: "#ff2b06",
+      },
+
+      screens: {
+        mdl: "901px",
       },
     },
   },
