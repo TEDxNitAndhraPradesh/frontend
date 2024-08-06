@@ -6,7 +6,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Event() {
   return (
     <>
-      <div className="flex justify-center sm:justify-around flex-wrap items-start sm:items-center h-max p-5 min-h-[20rem]  w-full bg-black flex-col sm:flex-row gap-5 ">
+      <div className="flex justify-center sm:justify-evenly flex-wrap items-start sm:items-center h-max p-5 min-h-[20rem]  w-full bg-black flex-col sm:flex-row gap-5 ">
         <div className="flex gap-2">
           <AiOutlineCalendar size={60} className="text-tedred" />
           <div className="flex text-white justify-center flex-col font-light">
