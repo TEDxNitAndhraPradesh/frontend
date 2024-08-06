@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="bg-black"> Logo </div>
       <div className="col-span-2 bg-tedred"></div>
       <div className="bg-white col-span-2 flex justify-center items-center">
-        <p>Hello</p>
+        <p></p>
       </div>
     </div>
   );
