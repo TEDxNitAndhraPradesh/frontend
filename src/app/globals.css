@@ -10,7 +10,10 @@
     @apply hover:text-[#FF2b06] duration-[500ms];
   }
   .ted-button {
-    @apply w-full h-[3rem] text-center bg-tedred backdrop-filter bg-opacity-25 backdrop-blur-2xl  text-white p-2 rounded-md font-medium text-[1.2rem];
+    @apply md:w-[15rem] h-[3rem] text-center bg-tedred backdrop-filter bg-opacity-25 backdrop-blur-2xl  text-white p-2 rounded-md font-bold font-helvitica text-[0.75rem] sm:text-[1.2rem];
+  }
+  .foot-link {
+    @apply duration-150 hover:scale-95;
   }
 }
 @layer utilities {

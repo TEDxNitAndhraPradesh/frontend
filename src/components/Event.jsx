@@ -6,7 +6,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Event() {
   return (
     <>
-      <div className="flex justify-center sm:justify-evenly flex-wrap items-start sm:items-center h-max p-5 min-h-[20rem]  w-full bg-black flex-col sm:flex-row gap-5 ">
+      <div className="flex justify-center  sm:justify-evenly flex-wrap items-start sm:items-center h-max p-5 min-h-[15rem]  w-full bg-black flex-col sm:flex-row gap-5 ">
         <div className="flex gap-2">
           <AiOutlineCalendar size={60} className="text-tedred" />
           <div className="flex text-white justify-center flex-col font-light">
@@ -29,14 +29,17 @@ export default function Event() {
           </div>{" "}
         </div>
       </div>
-      <div className="justify-around items-center h-[10rem] w-full bg-white flex ">
-        <p className="hidden justify-center sm:flex font-bold text-center w-[70%] font-poppins text-xl sm:text-3xl md:text-5xl">
+      <div className=" bg-black text-white justify-around items-center h-[10rem] w-full flex  text-2xl sm:text-xl md:text-3xl">
+        <p className="hidden justify-center sm:flex font-bold text-center w-[70%] font-poppins ">
           GET YOUR TICKETS
         </p>
-        <span className=" h-full sm:w-[.2rem] bg-black"></span>
-        <div className="flex h-full w-full sm:w-[30%] justify-center items-center font-bold font-poppins text-2xl sm:text-xl md:text-3xl">
+        <span className=" h-full sm:w-[.2rem] bg-white"></span>
+        <div className="flex h-full group w-full sm:w-[30%] justify-center items-center font-bold font-poppins">
           <span>Register Now</span>
-          <IoIosArrowRoundForward size={50} />
+          <IoIosArrowRoundForward
+            size={50}
+            className="group-hover:text-tedred animate-pulse duration-150 "
+          />
           {/* <FaArrowRight size={50} /> */}
         </div>
       </div>

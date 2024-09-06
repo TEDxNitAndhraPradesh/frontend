@@ -32,7 +32,7 @@ export default function NavBar() {
     <>
       <div
         ref={nav}
-        className="z-10 fixed top-0 flex justify-between p-2 items-center h-[5rem] w-full "
+        className="z-20 fixed top-0 flex justify-between p-2 items-center h-[5rem] w-full "
       >
         {/* <div className="z-10 sticky top-0 bg-black/95 bg-opacity-80 backdrop-blur flex justify-between p-2 items-center h-[5rem] w-full "> */}
         <div className="w-[15rem] sm:pl-[3rem] flex gap-2 pl-2 justify-start ">
@@ -84,9 +84,9 @@ export default function NavBar() {
       </div>
       <div
         id="sideBar"
-        className="w-[20rem] translate-x-[20rem] h-[100vh] bg-black fixed top-0 right-0 z-10 flex sm:hidden transform-all duration-150"
+        className="w-[20rem] translate-x-[20rem] h-[100vh] bg-black fixed top-0 right-0  flex sm:hidden transform-all duration-150 z-20"
       >
-        <ul className=" text-white h-full w-full flex-col flex justify-center gap-10 items-center  text-[1.5rem] font-medium">
+        <ul className=" text-white h-full w-full flex-col flex justify-center gap-2 items-center  text-[1.5rem] font-medium">
           <li>
             <IoIosClose
               onClick={() => setIsOpen(false)}

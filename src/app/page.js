@@ -1,16 +1,15 @@
-// import Image from "next/image";
-// import NavBar from "@/components/NavBar";
 import Event from "@/components/Event";
-import HomeAbout from "@/components/HomeAbout";
 import HomeFirst from "@/components/HomeFirst";
+import dynamic from "next/dynamic";
+const AnimatedText = dynamic(() => import("../components/HomeAbout"), {
+  ssr: false,
+});
 export default function Home() {
   return (
     <>
-      {/* <NavBar /> */}
       <HomeFirst />
       <Event />
-      <HomeAbout />
-      {/* <HomeFirst /> */}
+      <AnimatedText />
     </>
   );
 }
