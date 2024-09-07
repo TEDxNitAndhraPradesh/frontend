@@ -8,21 +8,27 @@ export default function Event() {
     <>
       <div className="flex justify-center  sm:justify-evenly flex-wrap items-start sm:items-center h-max p-5 min-h-[15rem]  w-full bg-black flex-col sm:flex-row gap-5 ">
         <div className="flex gap-2">
-          <AiOutlineCalendar size={60} className="text-tedred" />
+          <AiOutlineCalendar
+            size={60}
+            className="scale-75 sm:scale-100 text-tedred"
+          />
           <div className="flex text-white justify-center flex-col font-light">
             <p>DATE</p>
             <p>2:00 PM, 29nd September, 2024</p>
           </div>{" "}
         </div>
         <div className="flex gap-2">
-          <IoLocationOutline size={60} className="text-tedred" />
+          <IoLocationOutline
+            size={60}
+            className="text-tedred scale-75 sm:scale-100"
+          />
           <div className="flex text-white justify-center flex-col font-light">
             <p>LOCATION</p>
             <p>NIT AndhraPradesh</p>
           </div>{" "}
         </div>
         <div className="flex gap-2">
-          <CiUser size={60} className="text-tedred" />
+          <CiUser size={60} className="text-tedred scale-75 sm:scale-100" />
           <div className="flex text-white justify-center flex-col font-light">
             <p>SPEAKERS</p>
             <p>TBA</p>

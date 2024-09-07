@@ -46,11 +46,11 @@ const VerticalAnimation = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-start justify-center  h-max p-5 bg-black">
+    <div className=" relative flex flex-col items-start justify-center  h-max overflow-clip p-3 sm:p-5 bg-black">
       {data.map((item, index) => (
         <div
           key={index}
-          className="relative z-10 flex flex-col items-start justify-center w-[95%] pl-20 mb-20"
+          className="relative z-10 flex flex-col items-start justify-center w-[95%] pl-10 sm:pl-20 mb-20"
           ref={(el) => (sectionsRef.current[index] = el)}
         >
           <svg
@@ -67,7 +67,7 @@ const VerticalAnimation = () => {
             <h2 className="text-xl sm:text-3xl text-tedred font-bold mb-2">
               {item.head}
             </h2>
-            <p className="text-white text-justify tracking-tight sm:text-xl">
+            <p className="text-white text-left sm:text-justify tracking-tight sm:text-xl">
               {item.para}
             </p>
           </div>

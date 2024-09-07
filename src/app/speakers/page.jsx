@@ -4,54 +4,36 @@ import React, { useState } from "react";
 const speakersData = {
   2019: [
     {
-      name: "Jane Smith",
-      profession: "Scientist",
-      info: "Jane is a renowned scientist who has made groundbreaking discoveries in biotechnology.",
+      name: "Abhijit Jejurikar",
+      profession: "Founder & Curator",
+      info: "Dharavi Reloaded",
       pic: "https://via.placeholder.com/150",
     },
     {
-      name: "David Lee",
-      profession: "Author",
-      info: "David is an award-winning author of several best-selling novels.",
+      name: "Rahul Kaushik",
+      profession: "Indian Writer",
+      info: "The Melting Words",
       pic: "https://via.placeholder.com/150",
     },
     {
-      name: "John Doe",
-      profession: "Engineer",
-      info: "John is an innovative engineer who has worked on several groundbreaking projects.",
+      name: "Y.Krishna Bandaru",
+      profession: "CEO",
+      info: "Spinsoft",
       // pic: msd, // Use the imported image
     },
     {
-      name: "Alice Johnson",
-      profession: "Artist",
-      info: "Alice is a renowned artist known for her abstract paintings.",
+      name: "Israel Jebasingh",
+      profession: "Director",
+      info: "Officers IAS Academy",
       pic: "https://via.placeholder.com/150", // Placeholder for now
     },
   ],
   2024: [
     {
-      name: "Jane Smith",
-      profession: "Scientist",
-      info: "Jane is a renowned scientist who has made groundbreaking discoveries in biotechnology.",
+      name: "TBA",
+      profession: "TBA",
+      info: "TBA",
       pic: "https://via.placeholder.com/150",
-    },
-    {
-      name: "David Lee",
-      profession: "Author",
-      info: "David is an award-winning author of several best-selling novels.",
-      pic: "https://via.placeholder.com/150",
-    },
-    {
-      name: "John Doe",
-      profession: "Engineer",
-      info: "John is an innovative engineer who has worked on several groundbreaking projects.",
-      // pic: msd, // Use the imported image
-    },
-    {
-      name: "Alice Johnson",
-      profession: "Artist",
-      info: "Alice is a renowned artist known for her abstract paintings.",
-      pic: "https://via.placeholder.com/150", // Placeholder for now
     },
   ],
 };

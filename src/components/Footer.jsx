@@ -7,6 +7,7 @@ import {
   TiSocialYoutube,
   TiSocialLinkedin,
 } from "react-icons/ti";
+import Link from "next/link";
 export default function Footer() {
   return (
     <>
@@ -55,18 +56,30 @@ export default function Footer() {
             © Copyright 2024. All Rights Reserved.
           </p>
           <div className="flex text-[0.8rem] font-metrapolis-bold text-white justify-center flex-wrap w-full md:w-max items-center gap-4">
-            <p className="flex gap-2 items-center hover:text-tedred duration-150">
-              <FaInstagram size={15} /> INSTAGRAM{" "}
-            </p>
-            <p className="flex gap-2 items-center hover:text-tedred duration-150">
-              <TiSocialFacebook size={15} /> FACEBOOK
-            </p>{" "}
-            <p className="flex gap-2 items-center hover:text-tedred duration-150">
-              <TiSocialLinkedin size={15} /> LINKED IN
-            </p>{" "}
-            <p className="flex gap-2 items-center hover:text-tedred duration-150">
-              <TiSocialYoutube size={15} /> YOUTUBE
-            </p>
+            <Link href=" " target="_blank">
+              {" "}
+              <p className="flex gap-2 items-center hover:text-tedred duration-150">
+                <FaInstagram size={15} /> INSTAGRAM{" "}
+              </p>
+            </Link>
+            <Link href=" " target="_blank">
+              {" "}
+              <p className="flex gap-2 items-center hover:text-tedred duration-150">
+                <TiSocialFacebook size={15} /> FACEBOOK
+              </p>{" "}
+            </Link>
+            <Link href="" target="_blank">
+              {" "}
+              <p className="flex gap-2 items-center hover:text-tedred duration-150">
+                <TiSocialLinkedin size={15} /> LINKED IN
+              </p>{" "}
+            </Link>
+            <Link href="" target="_blank">
+              {" "}
+              <p className="flex gap-2 items-center hover:text-tedred duration-150">
+                <TiSocialYoutube size={15} /> YOUTUBE
+              </p>
+            </Link>
           </div>
         </div>
       </div>
