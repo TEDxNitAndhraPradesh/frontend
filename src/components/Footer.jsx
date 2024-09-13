@@ -65,24 +65,26 @@ export default function Footer() {
                 <FaInstagram size={15} /> INSTAGRAM{" "}
               </p>
             </Link>
-            {/* <Link href=" " target="_blank"> */}
-            {/*   {" "} */}
-            {/*   <p className="flex gap-2 items-center hover:text-tedred duration-150"> */}
-            {/*     <TiSocialFacebook size={15} /> FACEBOOK */}
-            {/*   </p>{" "} */}
-            {/* </Link> */}
-            <Link href="" target="_blank">
+            <Link
+              href="https://www.facebook.com/TEDxNITAndhraPradesh/"
+              target="_blank"
+            >
+              <p className="flex gap-2 items-center hover:text-tedred duration-150">
+                <TiSocialFacebook size={15} /> FACEBOOK
+              </p>{" "}
+            </Link>
+            {/* <Link href="" target="_blank">
               {" "}
               <p className="flex gap-2 items-center hover:text-tedred duration-150">
                 <TiSocialLinkedin size={15} /> LINKED IN
               </p>{" "}
-            </Link>
-            <Link href="" target="_blank">
+            </Link> */}
+            {/* <Link href="" target="_blank">
               {" "}
               <p className="flex gap-2 items-center hover:text-tedred duration-150">
                 <TiSocialYoutube size={15} /> YOUTUBE
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

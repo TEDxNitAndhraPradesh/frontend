@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { speakersData } from "@/data/speakersData";
 const SpeakersPage = () => {
@@ -14,10 +15,11 @@ const SpeakersPage = () => {
             <div
               key={year}
               onClick={() => setSelectedYear(parseInt(year))}
-              className={`cursor-pointer sm:py-2 px-6 rounded-lg font-medium text-lg transition-all duration-300 ${selectedYear === parseInt(year)
+              className={`cursor-pointer sm:py-2 px-6 rounded-lg font-medium text-lg transition-all duration-300 ${
+                selectedYear === parseInt(year)
                   ? "text-tedred"
                   : "text-white  hover:text-red-900"
-                }`}
+              }`}
             >
               {year}
             </div>
@@ -36,9 +38,11 @@ const SpeakersPage = () => {
                 key={index}
                 className=" p-6 rounded-lg shadow-xl transform hover:-translate-y-2 transition-all duration-300"
               >
-                <img
+                <Image
                   src={speaker.pic}
                   alt={speaker.name}
+                  width={150}
+                  height={150}
                   className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-aqua"
                 />
                 <h3 className="text-xl font-semibold mb-2 text-center text-aqua-800">

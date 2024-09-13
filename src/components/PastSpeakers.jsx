@@ -1,4 +1,5 @@
 import { speakersData } from "@/data/speakersData";
+import Image from "next/image";
 const PastSpeakers = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const PastSpeakers = () => {
         >
           {speakersData[2019].map((speaker, index) => (
             <div key={index} className="card p-6 bg-black rounded-lg ">
-              <img
+              <Image
                 src={speaker.pic}
                 alt={speaker.name}
                 className="w-36 h-40 object-cover mx-auto mb-4 border-2 border-aqua"
