@@ -56,7 +56,10 @@ export default function Footer() {
             © Copyright 2024. All Rights Reserved.
           </p>
           <div className="flex text-[0.8rem] font-metrapolis-bold text-white justify-center flex-wrap w-full md:w-max items-center gap-4">
-            <Link href=" " target="_blank">
+            <Link
+              href="https://www.instagram.com/tedxnitandhrapradesh/"
+              target="_blank"
+            >
               {" "}
               <p className="flex gap-2 items-center hover:text-tedred duration-150">
                 <FaInstagram size={15} /> INSTAGRAM{" "}
