@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 export default function HomeFirst() {
   return (
@@ -24,6 +25,7 @@ export default function HomeFirst() {
         {/*     TED<sup>x</sup> */}
         {/*   </p> */}
         {/* </div>{" "} */}
+      
       </div>
     </>
   );

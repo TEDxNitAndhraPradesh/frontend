@@ -1,0 +1,116 @@
+import Ig from "../images/Home1.png"; // Import the image directly
+
+export const memberdata = [
+    {
+        "ID": 1,
+        "name":"Shivam kumar",
+        "image": Ig, // Use the imported image
+        "designation": "coremember",
+        "designation1": "secretary",
+    },
+    {
+        "ID": 2,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation": "coremember",
+        "designation1": "co-secretary",
+    },
+    {
+        "ID": 3,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation": "coremember",
+        "designation1": "co-secretary",
+    },
+    {
+        "ID": 4,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation": "coremember",
+        "designation1": "joint-secretary",
+    },
+    {
+        "ID": 5,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation": "coremember",
+        "designation1": "joint-secretary",
+    },
+    {
+        "ID": 6,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 7,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 8,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 9,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 10,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 11,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "executive",
+        "designation": "executive",
+    },
+    {
+        "ID": 12,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "junior member",
+        "designation": "junior member",
+    },
+    {
+        "ID": 13,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "junior member",
+        "designation": "junior member",
+    },
+    {
+        "ID": 14,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "junior member",
+        "designation": "junior member",
+    },
+    {
+        "ID": 15,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "junior member",
+        "designation": "junior member",
+    },
+    {
+        "ID": 16,
+        "name":"Shivam kumar",
+        "image": Ig,
+        "designation1": "junior member",
+        "designation": "junior member",
+    }
+];
