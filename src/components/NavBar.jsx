@@ -95,19 +95,31 @@ export default function NavBar() {
             />
           </li>
           <li className="side-link">
-            <Link href="/">HOME</Link>
+            <Link href="/" onClick={() => setIsOpen(false)}>
+              HOME
+            </Link>
           </li>
           <li className="side-link">
-            <Link href="/speakers">SPEAKERS</Link>
+            <Link href="/speakers" onClick={() => setIsOpen(false)}>
+              SPEAKERS
+            </Link>
           </li>
           <li className="side-link">
-            <Link href="/sponsers">SPONSERS</Link>
+            <Link href="/sponsers" onClick={() => setIsOpen(false)}>
+              SPONSERS
+            </Link>
           </li>
           <li className="side-link">
-            <Link href="/about">ABOUT</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)}>
+              ABOUT
+            </Link>
           </li>
           <li className="side-link">
-            <Link href="#contact" scroll={true}>
+            <Link
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              scroll={true}
+            >
               CONTACT
             </Link>
           </li>
