@@ -1,7 +1,13 @@
 import aj from "../../public/images/speakers/Abhijit_Jejurikar.jpg";
 import ij from "../../public/images/speakers/Israel_Jebasingh.jpg";
 import rk from "../../public/images/speakers/Rahu_Kaushik.png";
+import vh from "../../public/images/speakers/2024/vh.png";
+import ic from "../../public/images/speakers/2024/ic.png";
 import kb from "../../public/images/speakers/Krishna_Bandaru.jpg";
+import ms from "../../public/images/speakers/2024/ms.jpg";
+import va from "../../public/images/speakers/2024/va.jpg";
+import sc from "../../public/images/speakers/2024/sc.jpg";
+import js from "../../public/images/speakers/2024/js.png";
 export const speakersData = {
   2019: [
     {
@@ -32,10 +38,40 @@ export const speakersData = {
   ],
   2024: [
     {
-      name: "TBA",
-      profession: "TBA",
-      info: "TBA",
-      pic: "",
+      name: "Harsha Chemudu",
+      profession: "Actor",
+      info: "Viva Harsha",
+      pic: vh,
+    },
+    {
+      name: "Indravati Chauhan",
+      profession: "Singer",
+      // info: "Viva Harsha",
+      pic: ic,
+    },
+    {
+      name: "Squadron Leader Jaya Simha",
+      profession: "India's Top Brain Coach",
+      info: "President,IMSC",
+      pic: js,
+    },
+    {
+      name: "Meher Sai",
+      profession: "Founder",
+      info: "Gear Head Motors",
+      pic: ms,
+    },
+    {
+      name: "Vivek Atray",
+      profession: "Former IAS officer",
+      info: "Indian author, motivational speaker",
+      pic: va,
+    },
+    {
+      name: "Sandeep Chatterjee",
+      profession: " CEO and Chairman, ISCEA India",
+      info: "Supply Chain and Sustainability Leader with IBM",
+      pic: sc,
     },
   ],
 };

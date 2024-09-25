@@ -6,16 +6,17 @@ const PastSpeakers = () => {
       <div className="w-full h-max flex flex-col justify-center gap-5 p-10 bg-black">
         <div className="gap-3 flex flex-col">
           <p className="text-2xl sm:text-4xl font-poppins text-white bg-black font-bold ">
-            PAST SPEAKERS
+            PRESENT SPEAKERS
           </p>
           <div className="w-[5rem] h-[0.2rem] bg-tedred"></div>
         </div>
         <div
           id="pastSpeakers"
-          className="flex flex-wrap gap-3 justify-evenly items-center w-full h-max"
+          className="grid sm:grid-cols-2 md:grid-cols-3"
+        // className="flex flex-wrap gap-3 justify-evenly items-center w-full h-max"
         >
-          {speakersData[2019].map((speaker, index) => (
-            <div key={index} className="card p-6 bg-black rounded-lg ">
+          {speakersData[2024].map((speaker, index) => (
+            <div key={index} className="card p-3 bg-black rounded-lg ">
               <Image
                 src={speaker.pic}
                 alt={speaker.name}

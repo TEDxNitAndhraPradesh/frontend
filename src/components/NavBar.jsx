@@ -62,9 +62,9 @@ export default function NavBar() {
             <li className="nav-link">
               <Link href="/speakers">SPEAKERS</Link>
             </li>
-            <li className="nav-link">
-              <Link href="/sponsers">SPONSORS</Link>
-            </li>
+            {/* <li className="nav-link"> */}
+            {/*   <Link href="/sponsers">SPONSORS</Link> */}
+            {/* </li> */}
             <li className="nav-link">
               <Link href="/about">ABOUT</Link>
             </li>
@@ -106,11 +106,11 @@ export default function NavBar() {
               SPEAKERS
             </Link>
           </li>
-          <li className="side-link">
-            <Link href="/sponsers" onClick={() => setIsOpen(false)}>
-              SPONSORS
-            </Link>
-          </li>
+          {/* <li className="side-link"> */}
+          {/*   <Link href="/sponsers" onClick={() => setIsOpen(false)}> */}
+          {/*     SPONSORS */}
+          {/*   </Link> */}
+          {/* </li> */}
           <li className="side-link">
             <Link href="/about" onClick={() => setIsOpen(false)}>
               ABOUT

@@ -1,4 +1,6 @@
 import React from "react";
+import to from "../../public/images/1(2).svg";
+import Image from "next/image";
 
 export default function HomeFirst() {
   return (
@@ -13,9 +15,22 @@ export default function HomeFirst() {
             <span className="text-white font-light">NITAndhraPradesh</span>
           </div>
           <div>
-            <div className="text-white text-3xl sm:text-5xl md:text-7xl flex gap-5 flex-col font-extrabold ">
-              Alchemy :
-              <p className="font-thin ">Turning of Ordinary to Extraordinary</p>
+            <div className="text-white text-3xl sm:text-5xl flex gap-5 flex-col">
+              <p className="font-poppins font-bold">Alchemy :</p>
+              <p className="font-light sm:text-3xl gap-2 md:text-5xl flex-wrap inline-flex items-center">
+                Transformation of{" "}
+                <span className="font-poppins"> Ordinary</span>{" "}
+                <span className="font-poppins inline-flex items-center">
+                  <Image
+                    src={to}
+                    width={500}
+                    height={500}
+                    className="w-[1.5rem] md:w-[2.3rem]"
+                  />{" "}
+                  <span className=" text-tedred ">o</span>{" "}
+                </span>
+                <span className="font-poppins">Extraordinary</span>
+              </p>
             </div>
           </div>
         </div>

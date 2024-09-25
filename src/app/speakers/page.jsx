@@ -15,11 +15,10 @@ const SpeakersPage = () => {
             <div
               key={year}
               onClick={() => setSelectedYear(parseInt(year))}
-              className={`cursor-pointer sm:py-2 px-6 rounded-lg font-medium text-lg transition-all duration-300 ${
-                selectedYear === parseInt(year)
+              className={`cursor-pointer sm:py-2 px-6 rounded-lg font-medium text-lg transition-all duration-300 ${selectedYear === parseInt(year)
                   ? "text-tedred"
                   : "text-white  hover:text-red-900"
-              }`}
+                }`}
             >
               {year}
             </div>
@@ -34,10 +33,7 @@ const SpeakersPage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {speakersData[selectedYear].map((speaker, index) => (
-              <div
-                key={index}
-                className=" p-6 rounded-lg shadow-xl transform hover:-translate-y-2 transition-all duration-300"
-              >
+              <div key={index} className=" p-6 rounded-lg shadow-xl ">
                 <Image
                   src={speaker.pic}
                   alt={speaker.name}
@@ -48,10 +44,10 @@ const SpeakersPage = () => {
                 <h3 className="text-xl font-semibold mb-2 text-center text-aqua-800">
                   {speaker.name}
                 </h3>
-                <p className="text-sm italic text-aqua-600 mb-4 text-center">
+                <p className="text-sm font-medium  text-aqua-600 mb-4 text-center">
                   {speaker.profession}
                 </p>
-                <p className="text-sm text-center text-aqua-800">
+                <p className="text-md font-semibold text-center text-aqua-800">
                   {speaker.info}
                 </p>
               </div>
