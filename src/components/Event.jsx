@@ -3,6 +3,7 @@ import { AiOutlineCalendar } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Link from "next/link";
 export default function Event() {
   return (
     <>
@@ -14,7 +15,7 @@ export default function Event() {
           />
           <div className="flex text-white justify-center flex-col font-light">
             <p>DATE</p>
-            <p>2:00 PM, 29nd September, 2024</p>
+            <p>2 PM- 6 PM, 5th October, 2024</p>
           </div>{" "}
         </div>
         <div className="flex gap-2">
@@ -31,7 +32,7 @@ export default function Event() {
           <CiUser size={60} className="text-tedred scale-75 sm:scale-100" />
           <div className="flex text-white justify-center flex-col font-light">
             <p>SPEAKERS</p>
-            <p>TBA</p>
+            <p>6</p>
           </div>{" "}
         </div>
       </div>
@@ -41,7 +42,15 @@ export default function Event() {
         </p>
         <span className=" h-full sm:w-[.2rem] bg-white"></span>
         <div className="flex h-full group w-full sm:w-[30%] justify-center items-center font-bold font-poppins">
-          <span>Register Now</span>
+          {" "}
+          <Link
+            target="_blank"
+            href={
+              "https://in.bookmyshow.com/events/tedxnitandhrapradesh/ET00413342?webview=true"
+            }
+          >
+            <span>Register Now</span>
+          </Link>
           <IoIosArrowRoundForward
             size={50}
             className="group-hover:text-tedred animate-pulse duration-150 "

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { speakersData } from "@/data/speakersData";
 const SpeakersPage = () => {
   const [selectedYear, setSelectedYear] = useState(2024);
-
+  const date = new Date();
   return (
     <div className="bg-black text-white min-h-screen relative p-4">
       <div className="flex flex-col sm:flex-row min-h-screen relative justify-center top-20">
@@ -27,10 +27,17 @@ const SpeakersPage = () => {
 
         {/* Right Div - Speakers */}
         <div className="sm:w-3/4 p-6">
-          <h2 className="sm:text-3xl font-bold text-tedred mb-6">
-            SPEAKERS ATTENDED IN YEAR{" "}
-            <span className="text-white">{selectedYear}</span>
-          </h2>
+          {selectedYear === date.getFullYear() ? (
+            <h2 className="sm:text-3xl font-bold text-tedred mb-6">
+              SPEAKERS TO BE ATTENDED THIS YEAR{" "}
+              <span className="text-white">{selectedYear}</span>
+            </h2>
+          ) : (
+            <h2 className="sm:text-3xl font-bold text-tedred mb-6">
+              SPEAKERS ATTENDED IN YEAR{" "}
+              <span className="text-white">{selectedYear}</span>
+            </h2>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {speakersData[selectedYear].map((speaker, index) => (
               <div key={index} className=" p-6 rounded-lg shadow-xl ">

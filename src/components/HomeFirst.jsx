@@ -22,6 +22,7 @@ export default function HomeFirst() {
                 <span className="font-poppins"> Ordinary</span>{" "}
                 <span className="font-poppins inline-flex items-center">
                   <Image
+                    alt="to"
                     src={to}
                     width={500}
                     height={500}
