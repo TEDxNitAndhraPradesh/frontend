@@ -41,8 +41,8 @@ const SpeakersPage = () => {
                 <Image
                   src={speaker.pic}
                   alt={speaker.name}
-                  width={150}
-                  height={150}
+                  width={500}
+                  height={500}
                   className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-aqua"
                 />
                 <h3 className="text-xl font-semibold mb-2 text-center text-aqua-800">

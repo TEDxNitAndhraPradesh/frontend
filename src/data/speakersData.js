@@ -1,7 +1,7 @@
-import aj from "../images/speakers/Abhijit_Jejurikar.jpg";
-import ij from "../images/speakers/Israel_Jebasingh.jpg";
-import rk from "../images/speakers/Rahu_Kaushik.png";
-import kb from "../images/speakers/Krishna_Bandaru.jpg";
+import aj from "../../public/images/speakers/Abhijit_Jejurikar.jpg";
+import ij from "../../public/images/speakers/Israel_Jebasingh.jpg";
+import rk from "../../public/images/speakers/Rahu_Kaushik.png";
+import kb from "../../public/images/speakers/Krishna_Bandaru.jpg";
 export const speakersData = {
   2019: [
     {

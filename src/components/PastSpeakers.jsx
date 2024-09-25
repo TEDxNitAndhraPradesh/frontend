@@ -19,6 +19,8 @@ const PastSpeakers = () => {
               <Image
                 src={speaker.pic}
                 alt={speaker.name}
+                width="500"
+                height="500"
                 className="w-36 h-40 object-cover mx-auto mb-4 border-2 border-aqua"
               />
               <h3 className="text-xl font-semibold mb-2 text-center text-white">

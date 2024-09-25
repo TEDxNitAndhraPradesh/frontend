@@ -3,7 +3,7 @@ import React from "react";
 export default function HomeFirst() {
   return (
     <>
-      <div className="flex bg-no-repeat relative top-0 bg-[url('../images/Home.png')] h-[100vh] justify-center w-full bg-cover">
+      <div className="flex bg-no-repeat relative top-0 bg-[url('../../public/images/Home.png')] h-[100vh] justify-center w-full bg-cover">
         <div className="p-2 sm:p-5 sm:pl-[3rem] gap-6 flex justify-end flex-col items-start bg-gradient-to-tr from-black/10 via-black/60 to-tedred/10 backdrop-filter backdrop-blur-sm bg-opacity-45 h-full w-full ">
           {/* <div> */}
           <div className="title text-[#FF2B06] text-2xl md:text-3xl">
