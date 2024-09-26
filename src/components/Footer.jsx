@@ -112,7 +112,7 @@ export default function Footer() {
       id="contact"
       className="w-screen px-4 lg:px-24 xl:px-32 py-20 flex flex-col gap-4"
     >
-      <div className="flex  sm:flex-row items-start gap-3 justify-between px-3 sm:px-7">
+      <div className="flex items-start gap-3 justify-between px-3 sm:px-7">
         <div className="flex-col justify-end ">
           <div className="font-helvitica -mb-1  font-extrabold text-2xl sm:text-3xl text-[#FF2B06]">
             TED<sup>x</sup>
@@ -127,9 +127,7 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <div className="scale-75 sm:scale-90">
           <GetYourTickets />
-        </div>
       </div>
       <div className="flex flex-col-reverse gap-5 sm:flex-row items-center sm:items-start justify-between px-3 pt-7 sm:pt-0 sm:text-left text-center sm:px-7">
         <p className="text-neutral-500 leading-[1.6]">
