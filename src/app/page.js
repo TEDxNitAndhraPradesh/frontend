@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HomeFirst />
-      <Event />
+      {/* <Event /> */}
       <AnimatedText />
       <PastSpeakers />
     </>

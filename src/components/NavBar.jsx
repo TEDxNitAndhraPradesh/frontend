@@ -54,27 +54,25 @@ export default function NavBar() {
             </div>
           </Link>
         </div>
-        <div className="h-full  sm:w-[60%]">
-          <ul className=" text-white h-full hidden sm:flex justify-around items-center text-[0.8rem] font-light">
-            <li className="nav-link">
-              <Link href="/">HOME</Link>
-            </li>
-            <li className="nav-link">
-              <Link href="/speakers">SPEAKERS</Link>
-            </li>
-            {/* <li className="nav-link"> */}
-            {/*   <Link href="/sponsers">SPONSORS</Link> */}
-            {/* </li> */}
-            <li className="nav-link">
-              <Link href="/about">ABOUT</Link>
-            </li>
-            <li className="nav-link">
-              <Link href="#contact" scroll={true}>
-                CONTACT
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className="text-white h-full hidden sm:flex items-center gap-6 text-[1.1rem] pr-[3rem]">
+          <li className="nav-link">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="nav-link">
+            <Link href="/speakers">Speakers</Link>
+          </li>
+          <li className="nav-link">
+            <Link href="/about" scroll={true}>
+              About
+            </Link>
+          </li>
+          <li className="nav-link">
+            <Link href="#contact" scroll={true}>
+              Connect with us
+            </Link>
+          </li>
+        </ul>
+
         <div
           className="flex sm:hidden group flex-col justify-center h-full  gap-[0.5rem] pr-2"
           onClick={() => setIsOpen(true)}
