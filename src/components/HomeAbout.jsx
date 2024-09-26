@@ -40,13 +40,13 @@ const VerticalAnimation = () => {
             end: "bottom 60%",
             scrub: 3,
           },
-        },
+        }
       );
     });
   }, []);
 
   return (
-    <div className=" relative flex flex-col items-start justify-center  h-max overflow-clip p-3 sm:p-5 bg-black">
+    <div className="py-14 sm:py-28 px-4 sm:px-20 relative flex flex-col items-start justify-center min-h-screen overflow-clip">
       {data.map((item, index) => (
         <div
           key={index}
@@ -67,7 +67,7 @@ const VerticalAnimation = () => {
             <h2 className="text-xl sm:text-3xl text-tedred font-bold mb-2">
               {item.head}
             </h2>
-            <p className="text-white text-left sm:text-justify tracking-tight sm:text-xl">
+            <p className="text-neutral-400 text-left sm:text-justify tracking-tight sm:text-xl">
               {item.para}
             </p>
           </div>

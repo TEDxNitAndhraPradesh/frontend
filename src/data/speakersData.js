@@ -9,33 +9,6 @@ import va from "../../public/images/speakers/2024/va.jpg";
 import sc from "../../public/images/speakers/2024/sc.jpg";
 import js from "../../public/images/speakers/2024/js.png";
 export const speakersData = {
-  2019: [
-    {
-      name: "Abhijit Jejurikar",
-      profession: "Founder & Curator",
-      info: "Dharavi Reloaded",
-      pic: aj,
-    },
-    {
-      name: "Rahul Kaushik",
-      profession: "Indian Writer",
-      info: "The Melting Words",
-      pic: rk,
-    },
-    {
-      name: "Y.Krishna Bandaru",
-      profession: "CEO",
-      info: "Spinsoft",
-      pic: kb,
-      // pic: msd, // Use the imported image
-    },
-    {
-      name: "Israel Jebasingh",
-      profession: "Director",
-      info: "Officers IAS Academy",
-      pic: ij, // Placeholder for now
-    },
-  ],
   2024: [
     {
       name: "Harsha Chemudu",
@@ -72,6 +45,33 @@ export const speakersData = {
       profession: " CEO and Chairman, ISCEA India",
       info: "Supply Chain and Sustainability Leader with IBM",
       pic: sc,
+    },
+  ],
+  2019: [
+    {
+      name: "Abhijit Jejurikar",
+      profession: "Founder & Curator",
+      info: "Dharavi Reloaded",
+      pic: aj,
+    },
+    {
+      name: "Rahul Kaushik",
+      profession: "Indian Writer",
+      info: "The Melting Words",
+      pic: rk,
+    },
+    {
+      name: "Y.Krishna Bandaru",
+      profession: "CEO",
+      info: "Spinsoft",
+      pic: kb,
+      // pic: msd, // Use the imported image
+    },
+    {
+      name: "Israel Jebasingh",
+      profession: "Director",
+      info: "Officers IAS Academy",
+      pic: ij, // Placeholder for now
     },
   ],
 };

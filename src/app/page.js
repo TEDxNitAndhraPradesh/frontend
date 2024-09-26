@@ -1,5 +1,4 @@
-import Event from "@/components/Event";
-import HomeFirst from "@/components/HomeFirst";
+import Landing from "@/components/Landing";
 import PastSpeakers from "@/components/PastSpeakers";
 import dynamic from "next/dynamic";
 const AnimatedText = dynamic(() => import("../components/HomeAbout"), {
@@ -8,8 +7,7 @@ const AnimatedText = dynamic(() => import("../components/HomeAbout"), {
 export default function Home() {
   return (
     <>
-      <HomeFirst />
-      <Event />
+      <Landing />
       <AnimatedText />
       <PastSpeakers />
     </>

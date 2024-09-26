@@ -2,7 +2,9 @@
 import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import logoWhite from "../../public/images/logo-white.png";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 import Link from "next/link";
 import { IoIosClose } from "react-icons/io";
 gsap.registerPlugin(ScrollTrigger);
@@ -32,49 +34,37 @@ export default function NavBar() {
     <>
       <div
         ref={nav}
-        className="z-20 fixed top-0 flex justify-between p-2 items-center h-[5rem] w-full "
+        className="z-20 fixed top-0 left-0 flex justify-between py-2 sm:py-3 px-4 sm:px-20 items-center w-full "
       >
-        {/* <div className="z-10 sticky top-0 bg-black/95 bg-opacity-80 backdrop-blur flex justify-between p-2 items-center h-[5rem] w-full "> */}
-        <div className="w-[15rem] sm:pl-[3rem] flex gap-2 pl-2 justify-start ">
-          {/* <div className="w-[5rem] bg-green-100"></div> */}
-          <Link href={"/"}>
-            <div className="flex-col justify-center">
-              <div className="font-helvitica -mb-1  font-extrabold text-xl text-[#FF2B06]">
-                TED<sup>x</sup>
-              </div>
-              <div className="font-light -mt-1 text-[0.8rem] text-white">
-                NIT Andhra Pradesh
-              </div>
-              <div className="-mt-[0.7rem]">
-                <span className="text-tedred text-[0.5rem]">x=</span>
-                <span className="text-white text-[0.5rem]">
-                  Independently Organized TED Event
-                </span>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div className="h-full  sm:w-[60%]">
-          <ul className=" text-white h-full hidden sm:flex justify-around items-center text-[0.8rem] font-light">
-            <li className="nav-link">
-              <Link href="/">HOME</Link>
-            </li>
-            <li className="nav-link">
-              <Link href="/speakers">SPEAKERS</Link>
-            </li>
-            {/* <li className="nav-link"> */}
-            {/*   <Link href="/sponsers">SPONSORS</Link> */}
-            {/* </li> */}
-            <li className="nav-link">
-              <Link href="/about">ABOUT</Link>
-            </li>
-            <li className="nav-link">
-              <Link href="#contact" scroll={true}>
-                CONTACT
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Link href={"/"}>
+          <div className="flex-col justify-center">
+            <Image
+              src={logoWhite}
+              className="h-12 sm:h-20 w-auto"
+              alt="TEDxNITAndhraPradesh"
+            />
+          </div>
+        </Link>
+
+        <ul className="text-white h-full hidden sm:flex items-center gap-6 text-[1.1rem]">
+          <li className="nav-link">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="nav-link">
+            <Link href="/speakers">Speakers</Link>
+          </li>
+          <li className="nav-link">
+            <Link href="/about" scroll={true}>
+              About
+            </Link>
+          </li>
+          <li className="nav-link">
+            <Link href="#contact" scroll={true}>
+              Connect with us
+            </Link>
+          </li>
+        </ul>
+
         <div
           className="flex sm:hidden group flex-col justify-center h-full  gap-[0.5rem] pr-2"
           onClick={() => setIsOpen(true)}
@@ -106,11 +96,7 @@ export default function NavBar() {
               SPEAKERS
             </Link>
           </li>
-          {/* <li className="side-link"> */}
-          {/*   <Link href="/sponsers" onClick={() => setIsOpen(false)}> */}
-          {/*     SPONSORS */}
-          {/*   </Link> */}
-          {/* </li> */}
+
           <li className="side-link">
             <Link href="/about" onClick={() => setIsOpen(false)}>
               ABOUT

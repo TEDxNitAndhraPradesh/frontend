@@ -31,7 +31,6 @@
 }
 #sideBar:has(li:hover) .side-link:not(:hover) {
   /* scale: 0.8; */
-  opacity: 0.7;
   font-weight: 100;
   /* duration: 100; */
   /* animation-duration: 1s; */
@@ -41,9 +40,22 @@
 }
 #pastSpeakers:has(div:hover) .card:not(:hover) {
   scale: 0.98;
-  opacity: 0.7;
   font-color: grey;
-  transition:
-    transform 200ms ease-in-out,
-    opacity 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+}
+
+.noise {
+  background: linear-gradient(
+      160deg,
+      rgba(126, 0, 0, 0.609),
+      rgb(32, 1, 1),
+      rgb(0, 0, 0)
+    ),
+    url(../../public/images/noise.svg);
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
