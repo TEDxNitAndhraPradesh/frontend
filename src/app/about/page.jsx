@@ -1,9 +1,7 @@
 import React from "react";
 import { Syne } from "next/font/google";
 const syne = Syne({ subsets: ["latin"] });
-import Image from "next/image";
 import TeamSection from "@/components/TeamSection";
-import team1 from "../../../public/images/speakers/Israel_Jebasingh.jpg";
 import { teamData } from "@/data/team";
 function Page() {
   return (
@@ -51,6 +49,11 @@ function Page() {
           title="Stage Decoration Team"
           teamMembers={teamData.Stage}
         />
+        <TeamSection
+          title="Social Media and Videography Team"
+          teamMembers={teamData.sm}
+        />
+
         {/* <h1 className={`${syne.className} text-[2.26rem] sm:text-[3.4rem]`}>
           TEAM
         </h1>

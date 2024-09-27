@@ -1,4 +1,3 @@
-import aj from "../../public/images/speakers/Abhijit_Jejurikar.jpg";
 import nayeem from "../../public/images/web/Nayeem.jpg";
 import mano from "../../public/images/web/Mano W.jpg";
 import soha from "../../public/images/web/soha Farhana.jpg";
@@ -33,11 +32,18 @@ import asim from "../../public/images/leads/Aseem Gupta.jpg";
 import archana from "../../public/images/leads/Archana Manjunath.jpg";
 import sm from "../../public/images/leads/sm.jpg";
 import vr from "../../public/images/leads/IMG-20240710-WA0010.jpg";
-// import nay from "../../public/images/leads/Aseem Gupta.jpg"
 import harsha from "../../public/images/leads/Harsha (1).jpg";
 import jawad from "../../public/images/leads/jawad.png";
 import sree from "../../public/images/leads/Aditya Sreeram KS.jpg";
 import jag from "../../public/images/leads/IMG-20240315-WA0004.jpg";
+import narendra from "../../public/images/sm/narendra.jpg";
+import raj from "../../public/images/sm/Raj Khan.jpg";
+import bvinay from "../../public/images/sm/bhuvan.jpeg";
+import vamshi from "../../public/images/sm/vamshi.jpg";
+import varsha from "../../public/images/sm/varsha.jpg";
+import naveen from "../../public/images/sm/naveen.jpg";
+import gv from "../../public/images/sm/G Varshitha.jpg";
+import sar from "../../public/images/sm/Shivaram_akkireddy.jpg";
 export const teamData = {
   Core: [
     {
@@ -179,6 +185,38 @@ export const teamData = {
     },
     {
       pic: sai,
+    },
+  ],
+  sm: [
+    {
+      pic: harsha,
+    },
+    {
+      pic: vr,
+    },
+    {
+      pic: narendra,
+    },
+    {
+      pic: raj,
+    },
+    {
+      pic: bvinay,
+    },
+    {
+      pic: vamshi,
+    },
+    {
+      pic: varsha,
+    },
+    {
+      pic: naveen,
+    },
+    {
+      pic: gv,
+    },
+    {
+      pic: sar,
     },
   ],
 };

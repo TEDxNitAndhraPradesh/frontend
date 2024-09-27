@@ -6,7 +6,7 @@ const TeamSection = ({ title, teamMembers }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-around w-full my-8">
       <h1
-        className={`${syne.className} text-[2.26rem] sm:text-[3rem] text-start w-full sm:w-1/4 pl-5 sm:pl-0`}
+        className={`${syne.className} font-semibold self-start text-[2.26rem] sm:text-[3rem] text-start w-full sm:w-1/4 pl-5 pt-5 sm:pl-0`}
       >
         {title}
       </h1>
