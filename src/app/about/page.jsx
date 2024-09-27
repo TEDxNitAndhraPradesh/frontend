@@ -7,7 +7,9 @@ function Page() {
   return (
     <section className="flex flex-col text-white px-4 sm:px-20 py-40 gap-20 min-h-screen items-center">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-around w-full">
-        <h1 className={`${syne.className} text-[2.26rem] sm:text-[3.4rem]`}>
+        <h1
+          className={`${syne.className} font-semibold text-[2.26rem] sm:text-[3.4rem]`}
+        >
           OUR <span className="text-tedred">VISION</span>
         </h1>
         <div className="w-[90%] sm:w-[50%] text-neutral-400 text-lg">
@@ -46,7 +48,7 @@ function Page() {
           teamMembers={teamData.Sponsorship}
         />
         <TeamSection
-          title="Stage Decoration Team"
+          title="Stage Operations Team"
           teamMembers={teamData.Stage}
         />
         <TeamSection
@@ -54,6 +56,7 @@ function Page() {
           teamMembers={teamData.sm}
         />
 
+        <TeamSection title="Event Management Team" teamMembers={teamData.em} />
         {/* <h1 className={`${syne.className} text-[2.26rem] sm:text-[3.4rem]`}>
           TEAM
         </h1>
