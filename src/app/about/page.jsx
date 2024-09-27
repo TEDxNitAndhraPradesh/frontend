@@ -2,7 +2,7 @@ import React from "react";
 import { Syne } from "next/font/google";
 const syne = Syne({ subsets: ["latin"] });
 import Image from "next/image";
-import TeamSection from "@/components/Teamsection";
+import TeamSection from "@/components/TeamSection";
 import team1 from "../../../public/images/speakers/Israel_Jebasingh.jpg";
 import { teamData } from "@/data/team";
 function Page() {
@@ -37,12 +37,12 @@ function Page() {
 
       <div className="flex flex-col items-center justify-around w-full">
         <TeamSection title="Core Team" teamMembers={teamData.Core} />
+        <TeamSection title="Curation Team" teamMembers={teamData.Curation} />
         <TeamSection title="Web Dev Team" teamMembers={teamData.WebDev} />
         <TeamSection
           title="Graphic Design Team"
           teamMembers={teamData.SocialMeadiaAndDesign}
         />
-        <TeamSection title="Curation Team" teamMembers={teamData.Curation} />
         <TeamSection
           title="Sponsorship Team"
           teamMembers={teamData.Sponsorship}
